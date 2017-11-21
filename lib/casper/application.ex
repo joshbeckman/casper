@@ -8,7 +8,7 @@ defmodule Casper.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      Plug.Adapters.Cowboy.child_spec(:http, CasperRouter, [], [port: 4001])
+      Plug.Adapters.Cowboy.child_spec(:http, CasperRouter, [], [port: Casper.Utils.port])
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
