@@ -1,0 +1,22 @@
+version: '2'
+services:
+    web:
+      build: .
+      command: 'bash -c ''mix run --no-halt'''
+      working_dir: /app/user
+      environment:
+        PORT: 4001
+        MIX_ENV: dev
+      ports:
+        - '4001:4001'
+    shell:
+      build: .
+      command: bash
+      working_dir: /app/user
+      environment:
+        PORT: 4001
+        MIX_ENV: dev
+      ports:
+        - '4001:4001'
+      volumes:
+        - '.:/app/user'

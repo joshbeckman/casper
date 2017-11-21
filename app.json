@@ -1,0 +1,5 @@
+{
+  "name": "casper",
+  "image": "elixir:latest",
+  "addons": []
+}
