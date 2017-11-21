@@ -1,6 +1,6 @@
 # Casper
 
-**TODO: Add description**
+A Content-Security-Policy report-uri and data presentation app (and a friendly ghost).
 
 ## Installation
 
